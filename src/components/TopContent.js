@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   MDBDropdown,
   MDBDropdownMenu,
@@ -10,10 +10,11 @@ import deutsch from "../assets/deutsch.svg";
 import SideNavbar from "./SideNavbar";
 
 const TopContent = () => {
+  
   return (
     
     <div className="bg-secondary">
-       <SideNavbar />
+      
       <div className="container ">
         <div className="d-flex justify-content-between">
           <div >

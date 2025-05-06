@@ -3,17 +3,17 @@ import logo from '../assets/freshcart-logo.svg'
 import { MDBListGroup, MDBListGroupItem } from "mdb-react-ui-kit";
 import '../components/SlideNavbar.css'
 
-const SideNavbar = () => {
+const SideNavbar = ({hambuger , setHamburger}) => {
     const [isclick , setClick] = useState(false)
   return (
     <div className='bg-white'>
         <div className='container '>
             <div className='d-flex justify-content-between p-3'> <img src={logo}/>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" stroke-width="1"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" stroke-width="1" onClick={()=>setHamburger(!hambuger)}/></svg>
             </div>
            <div className='border d-flex justify-content-between m-3 rounded-4 p-1'>
            <input type='text' className='outline-none border-0 ps-3' placeholder='search for holders'/>
-           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m21 21l-4-4m2-6a8 8 0 1 1-16 0a8 8 0 0 1 16 0"/></svg>
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m21 21l-4-4m2-6a8 8 0 1 1-16 0a8 8 0 0 1 16 0" /></svg>
            </div>
 
            <button className='btn btn-success col-12 ' onClick={()=>setClick(!isclick)}>All  Deparments</button>

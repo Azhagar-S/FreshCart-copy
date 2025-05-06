@@ -3,11 +3,11 @@ import TopContent from './TopContent'
 import Logodiv from './Logodiv'
 import Navbar from './Navbar'
 
-const Header = () => {
+const Header = ({hambuger , setHamburger}) => {
   return (
     <div >
         <TopContent />
-        <Logodiv />
+        <Logodiv hambuger={hambuger} setHamburger={setHamburger}/>
         <Navbar />
     </div>
   )
