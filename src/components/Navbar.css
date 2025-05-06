@@ -1,0 +1,21 @@
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    transform: translateY(0.3);
+    transition: ease-in;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    
+      pointer-events: none;
+  }
+ 
+
+  .no-hover:hover,
+.no-hover:active {
+  background-color: inherit !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  cursor: default;
+ 
+}
+

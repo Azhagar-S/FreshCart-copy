@@ -1,0 +1,24 @@
+
+
+.banner1{
+    background-image: url('../assets/slide-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   height: 568px;
+}
+.banner2{
+    background-image: url('../assets/slide-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   height: 568px;
+}
+p{
+    font-size: 14px;
+}
+span{
+    font-size: 10px;
+}

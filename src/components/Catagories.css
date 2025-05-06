@@ -1,0 +1,31 @@
+
+.slide:hover{
+    box-shadow: 2px 10px 6px 0px rgba(0, 0, 0, 0.2);
+    border: 2px solid green;
+}
+.slide{
+    max-height: 500px;
+}
+.item{
+    height: 100%;
+}
+.Banner_1{
+    background-image: url("../assets/grocery-banner.png");
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.Banner_2{
+    background-image: url("../assets/grocery-banner-2.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+@media  (max-width: 768px){
+    .pg-transparent{
+        position: absolute;
+        top: 30px;
+    }
+}
